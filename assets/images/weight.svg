@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <g id="Group_777" data-name="Group 777" transform="translate(-190 -1835)">
+    <circle id="Ellipse_431" data-name="Ellipse 431" cx="16.5" cy="16.5" r="16.5" transform="translate(190 1835)" fill="#e8a437"/>
+    <g id="Group_524" data-name="Group 524">
+      <text id="KG" transform="translate(207 1854)" fill="#282828" font-size="6" font-family="SegoeUI, Segoe UI"><tspan x="-3.667" y="0">KG</tspan></text>
+      <g id="Group_523" data-name="Group 523" transform="translate(197.5 1841.629)">
+        <path id="Path_3545" data-name="Path 3545" d="M0,2.136,10.993,0V18L0,15.887Z" transform="translate(18 4.416) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+        <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="2.127" cy="2.127" rx="2.127" ry="2.127" transform="matrix(0.082, -0.997, 0.997, 0.082, 6.883, 4.239)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

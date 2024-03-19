@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Group_618" data-name="Group 618" transform="translate(-1281 -2208)">
+    <rect id="Rectangle_270" data-name="Rectangle 270" width="64" height="64" rx="10" transform="translate(1281 2208)" fill="#fff"/>
+    <g id="Group_435" data-name="Group 435" transform="translate(-0.374 1)">
+      <path id="Path_4687" data-name="Path 4687" d="M49.26,53.988H17.93v-19.4a1.429,1.429,0,0,1,1.431-1.431H47.837a1.429,1.429,0,0,1,1.431,1.431v19.4Z" transform="translate(1284.359 2206.426)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_4688" data-name="Path 4688" d="M14.816,59.407H6.361A1.461,1.461,0,0,1,4.9,57.946V55.83h9.916" transform="translate(1287.474 2201.008)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_4689" data-name="Path 4689" d="M34.25,25.94h.571l9.041,5.494" transform="translate(1280.458 2208.152)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_4690" data-name="Path 4690" d="M9.875,48.712l-2.61-1.727a4.464,4.464,0,0,1-1.7-3.2V38.8a10.7,10.7,0,0,1,5.959-9.588l5.076-3.128" transform="translate(1287.316 2208.118)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <ellipse id="Ellipse_406" data-name="Ellipse 406" cx="9.421" cy="9.421" rx="9.421" ry="9.421" transform="translate(1299.816 2217)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_4691" data-name="Path 4691" d="M14.67,42.31v4.284l2.481,2.283" transform="translate(1285.138 2204.239)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_2589" data-name="Line 2589" y2="3.744" transform="translate(1309.237 2235.842)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Jungle-27" transform="translate(1305.231 2239.374)">
+        <circle id="Ellipse_53" data-name="Ellipse 53" cx="1.995" cy="1.995" r="1.995" transform="translate(10.753 7.042)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Path_572" data-name="Path 572" d="M17.774,8.9c0,3.027-4.887,7.614-4.887,7.614S8,11.932,8,8.9s2.179-5.5,4.887-5.5S17.774,5.854,17.774,8.9Z" transform="translate(-0.16 0.5)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

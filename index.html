@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machine Wale</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+  <!-- slider link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!--  <link rel="icon"-->
+<!--			href="/assets/erpnext/images/erpnext-favicon.svg" type="image/x-icon">-->
+<!--		<link type="text/css" rel="stylesheet" href="/assets/frappe/dist/css/desk.bundle.U2CRS2F2.css"><link type="text/css" rel="stylesheet" href="/assets/frappe/dist/css/report.bundle.V2YD7A27.css"><link type="text/css" rel="stylesheet" href="/assets/erpnext/dist/css/erpnext.bundle.WSKK62HZ.css"></head>-->
+  
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MachineWale - Rent Listing</title>
+  <!-- flowbite CDN Link  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  
+  <!-- Favicon Link  -->
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+  <!-- Custom CSS Link  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  
+  <!-- slider link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- jquery link -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  
+  <style>
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: gray;
+    }
+
+    .ui-slider {
+      width: 12rem;
+      height: 0.7rem;
+    }
+
+    .ui-widget-header {
+      background-color: #eca93c;
+    }
+
+    .ui-state-default {
+      border-radius: 50% !important;
+    }
+
+    .ui-state-active {
+      background-color: rgb(220, 219, 219) !important;
+      border-radius: 50% !important;
+    }
+  </style>
+
+
+  <style>
+    .swiper-button-prev,
+      .swiper-button-next {
+        margin-left: 0rem !important;
+        color: gray !important;
+      }
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-pagination-bullet {
+      background-color: gray;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 20rem;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popular-models-category-swiper .swiper-slide-active a {
+      background-color: #ECA93C;
+      /* Set active slide background color */
+      color: white;
+    }
+
+    .business-wise-heavy-machinery-swiper .swiper-slide-active a {
+      background-color: #ECA93C;
+      /* Set active slide background color */
+      color: white;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .active_popular {
+      background-color: #ECA93C !important;
+      color: white;
+      border-radius: 25px !important;
+    }
+
+    .active_business {
+      background-color: #ECA93C !important;
+      color: white;
+      border-radius: 25px !important;
+    }
+
+  </style>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body class="max-w-[1920px] mx-auto">
+  <!-- Navbar start here -->
+  <!-- <nav class="bg-white border-gray-200 mx-5 sm:mx-16">
+    <ul class="hidden lg:flex items-center justify-between">
+      <li>
+        <img src="/assets/images/brandLogo1.svg" class="" alt="Machine-wale Logo" />
+      </li>
+      <li>
+        <a href="#" class="flex-nowrap"> New Machines </a>
+      </li>
+      <li>
+        <a href="#" class="flex-nowrap"> Used Machines </a>
+      </li>
+      <li>
+        <a href="#" class="flex-nowrap"> Rent Listing </a>
+      </li>
+      <li>
+        <a href="#" class="flex-nowrap"> Review & News </a>
+      </li>
+      <li>
+        <div class="relative lg-flex shrink w-60 lg:w-40 xl:w-60 my-2">
+          <img src="/assets/images/searchIcon.png" alt="searchIcon"
+          class="absolute right-2 top-2" />
+          <input type="text" placeholder="Search"
+            class="w-full h-8 rounded-md focus:ring-[#ECA93C] focus:border-[#ECA93C]" />
+        </div>
+      </li>
+      <li>
+        <div class="flex items-centers justify-between gap-x-2 h-6">
+          <img src="/assets/images/locationIcon.png" class="hover:bg-gray-100 hover:text-[#ECA93C]"
+            alt="locationIcon" />
+          <img src="/assets/images/google-translate.png"
+            class="hover:bg-gray-100 hover:text-[#ECA93C]" alt="google-translate-icon" />
+          <img src="/assets/images/userLogo.png" class="hover:bg-gray-100 hover:text-[#ECA93C]"
+            alt="userLogo" />
+        </div>
+      </li>
+    </ul>
+    <div class="flex flex-col justify-between items-between">
+      <div class="md:flex lg:hidden flex justify-between items-center py-2">
+        <div>
+          <img src="/assets/images/brandLogo.png" class="" alt="Machine-wale Logo" /> -->
+  <!-- <img src="/assets/images/mw-logo.png" class="block sm:hidden h-10 w-10" alt="Machine-wale Logo" /> -->
+  <!-- </div>
+        <div>
+          <button data-collapse-toggle="navbar-search" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-search" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:mx-16 bg-gray-50 z-10 lg:hidden absolute top-[55px] left-0 hidden" id="navbar-search">
+        <div class="relative  my-4 md:w-[33rem] mx-6 md:mx-auto">
+          <input type="text" placeholder="Search"
+            class="h-8 w-full rounded-lg focus:ring-[#ECA93C] focus:border-[#ECA93C]" />
+          <img src="/assets/images/searchIcon.png" alt="searchIcon"
+            class="absolute right-5 top-2" />
+        </div>
+        <div class="flex gap-5 items-center justify-start mx-5 my-3">
+          <img src="/assets/images/locationIcon.png"
+            class="hover:bg-gray-100 hover:text-[#ECA93C] p-2" alt="locationIcon" />
+          <img src="/assets/images/google-translate.png"
+            class="hover:bg-gray-100 hover:text-[#ECA93C] p-2" alt="google-translate-icon" />
+          <img src="/assets/images/userLogo.png" class="hover:bg-gray-100 hover:text-[#ECA93C] p-2"
+            alt="userLogo" />
+        </div>
+        <div class="flex flex-col w-full px-4">
+          <a href="#" class="py-2 px-3 font-semibold text-gray-900 rounded hover:bg-gray-100" aria-current="page">New
+            Machines</a>
+          <a href="#" class="py-2 px-3 font-semibold text-gray-900 rounded hover:bg-gray-100">Used Machines</a>
+          <a href="#" class="py-2 px-3 font-semibold text-gray-900 rounded hover:bg-gray-100">Rent Listing</a>
+          <a href="#" class="py-2 px-3 font-semibold text-gray-900 rounded hover:bg-gray-100">Review & News</a>
+        </div>
+
+
+      </div>
+    </div> -->
+
+  <!-- </div> -->
+  <!-- </nav> -->
+
+  <!-- VG CODE start  -->
+  <nav class="bg-white border-gray-200 my-2 mx-5 sm:mx-16">
+    <!-- <nav class="bg-white border-gray-200 py-2 px-5 sm:px-16 top-0 start-0 right-0 fixed w-full z-50"> -->
+    <ul class="hidden lg:flex items-center justify-between">
+      <li>
+        <a href="/Home">
+        <img src="assets/images/brandLogo1.svg" class=" lg:w-[13rem] xl:w-[18rem]" alt="Machine-wale Logo" />
+      </a>
+      </li>
+      <li>
+        <a href="#" class="flex-nowrap"> New Machines </a>
+      </li>
+      <li>
+        <a href="#" class="flex-nowrap"> Used Machines </a>
+      </li>
+      <li>
+        <a href="/rent" class="flex-nowrap"> Rent Listing </a>
+      </li>
+      <li>
+        <a href="/review" class="flex-nowrap"> Review & News </a>
+      </li>
+      <li>
+        <div class="relative lg-flex shrink w-60 lg:w-40 xl:w-60 2xl:w-80 my-2">
+          <img src="/assets/images/searchIcon.png" alt="searchIcon"
+            class="absolute right-2 top-2" />
+          <input type="text" placeholder="Search"
+            class="w-full h-8 rounded-md focus:ring-[#ECA93C] focus:border-[#ECA93C]" />
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center justify-between gap-x-2 xl:gap-x-4 h-5">
+          <div class="xl:hidden flex align-center justify-center my-2">
+            <button id="dropdownDefaultButton" data-dropdown-toggle="user-profile"
+              class="text-black p-2 bg-white hover:bg-gray-100 focus:ring-2 focus:outline-none focus:ring-[#ECA93C] font-medium rounded-lg text-sm text-center inline-flex items-center"
+              type="button">
+
+              <img src="/assets/images/userLogo.png" alt="userLogo" />
+              <svg class="w-2.5 h-2.5 ms-auto md:ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+          </div>
+
+          <div id="user-profile"
+            class="xl:hidden z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48">
+            <ul class="p-2 text-sm text-gray-700 flex flex-col gap-1" aria-labelledby="dropdownDefaultButton">
+              <li>
+                <div class="px-3 py-2 flex items-center gap-2 hover:bg-gray-100 cursor-pointer rounded-md">
+                  <img src="/assets/images/locationIcon.png" alt="locationIcon" class="w-5 h-7" />
+                  <p>Location</p>
+                </div>
+              </li>
+              <li>
+                <div class="px-3 py-2 flex items-center gap-2 hover:bg-gray-100 cursor-pointer rounded-md">
+                  <img src="/assets/images/google-translate.png" alt="google-translate-icon"
+                    class="w-5 h-7" />
+                  <p>Language</p>
+                </div>
+                <!-- <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ahmedabad</a> -->
+              </li>
+              <li>
+                <div class="px-3 py-2 flex items-center gap-2 hover:bg-gray-100 cursor-pointer rounded-md">
+                  <img src="/assets/images/userLogo.png" alt="userLogo" class="w-5 h-7" />
+                  <p>Profile</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="hidden xl:flex flex-col items-center  ">
+            <img src="/assets/images/locationIcon.png" alt="locationIcon" />
+            <p class="text-xs cursor-pointer">Location</p>
+          </div>
+          <div class="hidden xl:flex flex-col items-center  ">
+            <img src="/assets/images/google-translate.png" alt="google-translate-icon" />
+            <p class="text-xs cursor-pointer">Language</p>
+          </div>
+          <div class="hidden xl:flex flex-col items-center ">
+            <img src="/assets/images/userLogo.png" alt="userLogo" />
+            <p class="text-xs cursor-pointer">Profile</p>
+          </div>
+        </div>
+
+
+      </li>
+    </ul>
+    <div class="flex flex-col justify-between items-between">
+      <div class="md:flex lg:hidden flex justify-between items-center py-2">
+        <div>
+          <a href="/Home">
+          <img src="/files/brandLogo1.svg" class="" alt="Machine-wale Logo" />
+        </a>
+          <!-- <img src="./assets/images/mw-logo.png" class="block sm:hidden h-10 w-10" alt="Machine-wale Logo" /> -->
+        </div>
+        <div>
+          <button data-collapse-toggle="navbar-search" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-search" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:mx-16 bg-gray-50 z-10 lg:hidden absolute top-[55px] left-0 hidden" id="navbar-search">
+        <div class="relative  my-4 md:w-[33rem] mx-6 md:mx-auto">
+          <input type="text" placeholder="Search"
+            class="h-8 w-full rounded-lg focus:ring-[#ECA93C] focus:border-[#ECA93C]" />
+          <img src="/assets/images/searchIcon.png" alt="searchIcon"
+            class="absolute right-5 top-2" />
+        </div>
+        <div class="flex gap-5 items-center justify-start mx-5 my-3 px-2">
+          <div class="flex flex-col items-center  ">
+            <img src="/assets/images/locationIcon.png" alt="locationIcon"
+              class="hover:bg-gray-100 hover:text-[#ECA93C] p-2" />
+            <p class="text-xs cursor-pointer">Location</p>
+          </div>
+          <div class="flex flex-col items-center  ">
+            <img src="/assets/images/google-translate.png" alt="google-translate-icon"
+              class="hover:bg-gray-100 hover:text-[#ECA93C] p-2" />
+            <p class="text-xs cursor-pointer">Language</p>
+          </div>
+          <div class="flex flex-col items-center ">
+            <img src="/assets/images/userLogo.png" alt="userLogo"
+              class="hover:bg-gray-100 hover:text-[#ECA93C] p-2" />
+            <p class="text-xs cursor-pointer">Profile</p>
+          </div>
+
+        </div>
+        <div class="flex flex-col w-full px-4">
+          <a href="#" class="py-2 px-3 font-semibold text-gray-900 rounded hover:bg-gray-100" aria-current="page">New
+            Machines</a>
+          <a href="#" class="py-2 px-3 font-semibold text-gray-900 rounded hover:bg-gray-100">Used Machines</a>
+          <a href="/rentlisting" class="py-2 px-3 font-semibold text-gray-900 rounded hover:bg-gray-100">Rent Listing</a>
+          <a href="/review" class="py-2 px-3 font-semibold text-gray-900 rounded hover:bg-gray-100">Review & News</a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- </div> -->
+  </nav>
+  <!-- VG CODE end -->
+
+  <!-- Navbar end here -->
+
+  
+<body class="max-w-[1920px] mx-auto">
+  <!-- About-Us page start here  -->
+
+  <!-- About US title with Backgraound Section Start here  -->
+
+  <!-- Reviews and news backgroudimg section start here -->
+  <section class="">
+    <div
+      class="flex items-end justify-center bg-[url('/assets/images/Rentbg.png')] sm:bg-[url('/assets/images/review-banner.png')] bg-no-repeat bg-cover h-[30rem] md:h-screen w-full">
+      <div class="flex flex-col ">
+        <h2 class="tracking-widest lg:text-4xl text-xl font-black text-center uppercase font-bold text-white">Your
+          Project, Our Machines</h2>
+        <h4 class="lg:text-2xl  text-center text-white mt-2 mb-5">Seamless Heavy Machine Solutions</h4>
+        <div
+          class="md:flex md:my-4 mb-5 flex-wrap gap-x-2 justify-center bg-white mx-6 lg:px-10 md:px-2 lg:px-2 md:mx-16 xl:px-2 xl:mx-auto rounded-xl">
+
+          <div class="flex justify-center gap-2 align-center my-2">
+            <h5 class="flex items-center font-thin text-gray-800 md:mr-[15rem] lg:mr-[30rem] lg:pl-[3rem]">Find your
+              machine here</h5>
+
+            <button type="button"
+              class="text-white  lg:h-10 h-8 w-[5rem] sm:h-12 sm:w-[11.9rem] lg:w-[10rem] md:w-[10rem] bg-gray-800 hover:bg-gray-900 focus:ring-2 focus:outline-none focus:ring-[#ECA93C] font-semibold rounded-lg text-sm sm:text-2xl">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- reviews & news page end -->
+  </section>
+  <!-- Reviews and news backgroudimg section end here -->
+  <!-- About US title with Backgraound Section End here  -->
+  <!-- .....Filter Section Start Here...... -->
+  <section class="mt-10">
+    <div class="flex flex-col gap-4 sm:flex-row mx-5 sm:mx-16 my-4">
+      <div class="lg:w-[30%] md:w-[40%] ">
+        <div class="flex gap-3 ">
+          <img id="toggleButton" src="/assets/images/filter.svg" alt="showroom" />
+          <h4 class="text-lg text-gray-800">Filters</h4>
+        </div>
+        <div class="bg-gray-50 rounded-xl mt-6 hidden md:block lg:block" id="myDiv">
+          <div class="flex gap-2 pt-7 px-7">
+            <img src="/assets/images/brand-star.svg" alt="showroom"
+              class="text-center rounded-full bg-[#ECA93C]" />
+            <h4 class="text-lg text-gray-800 my-auto">Machine Type</h4>
+          </div>
+          <div class="px-7">
+            <ul>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Access Plateforms
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Backhoe Loaders
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Compactors
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Excavators
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Mini Excavators
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Small Loader
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Telehandlers
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Wheeled Loaders
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Access Plateforms
+              </li>
+            </ul>
+          </div>
+          <hr class="my-4" />
+          <div class="flex gap-2 px-7">
+            <img src="/assets/images/brand-star.svg" alt="showroom"
+              class="text-center rounded-full bg-[#ECA93C]" />
+            <h4 class="text-lg text-gray-800 my-auto">Brand</h4>
+          </div>
+          <div class="px-7 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-1 mt-1">
+            <div class="bg-white p-7 w-30 rounded-xl">
+              <img src="/assets/images/ace-logo.svg" alt="showroom" />
+            </div>
+            <div class="bg-white p-7 w-30 rounded-xl">
+              <img src="/assets/images/cat-logo.svg" alt="showroom" />
+            </div>
+            <div class="bg-white p-7 w-30 rounded-xl">
+              <img src="/assets/images/ace-logo.svg" alt="showroom" />
+            </div>
+            <div class="bg-white p-7 w-30 rounded-xl">
+              <img src="/assets/images/cat-logo.svg" alt="showroom" />
+            </div>
+            <div class="bg-white p-7 w-30 rounded-xl">
+              <img src="/assets/images/ace-logo.svg" alt="showroom" />
+            </div>
+            <div class="bg-white p-7 w-30 rounded-xl">
+              <img src="/assets/images/cat-logo.svg" alt="showroom" />
+            </div>
+            <div class="bg-white p-7 w-30 rounded-xl">
+              <img src="/assets/images/ace-logo.svg" alt="showroom" />
+            </div>
+            <div class="bg-white p-7 w-30 rounded-xl">
+              <img src="/assets/images/cat-logo.svg" alt="showroom" />
+            </div>
+            <div class="bg-white p-7 w-30 rounded-xl">
+              <img src="/assets/images/ace-logo.svg" alt="showroom" />
+            </div>
+          </div>
+          <hr class="my-4" />
+          <div class="flex gap-2 px-7">
+            <img src="/assets/images/rupee.svg" alt="showroom"
+              class="text-center   " />
+            <h4 class="text-lg text-gray-800">Application</h4>
+          </div>
+          <div class="px-7">
+            <ul>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Landscaping
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Construction
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Material Headling
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Agriculture
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Mini Excavators
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Transportation
+              </li>
+              <li class="font-thin bg-white p-2 round text-gray-800 m-1 pl-10">
+                Excavation
+              </li>
+            </ul>
+          </div>
+          <hr class="my-4" />
+          <div class="flex gap-2 px-7">
+            <img src="/assets/images/brand-star.svg" alt="showroom"
+              class="text-center rounded-full bg-[#ECA93C]" />
+            <h4 class="text-lg text-gray-800">Budget</h4>
+          </div>
+          <div class=" px-8 py-2 bg-gray-50 mx-5">
+            <div class="slider">
+              <input type="text" id="amount" readonly style="border: none; font-weight: bold" class="bg-gray-50" />
+              <div id="slider-range" class="my-2"></div>
+            </div>
+          </div>
+
+          <div class="px-7 ">
+            <div class="grid lg:grid-cols-2 md:grid-cols-1">
+              <div class="text-xs bg-white py-2 rounded-md text-center  m-1 border-gray-500 border-2">Under &#x20B9 20
+                Lakhs</div>
+              <div class="text-xs bg-white py-2 rounded-md text-center  m-1 border-gray-500 border-2">&#x20B9
+                20 Lakhs to &#x20B9 25 Lakhs</div>
+              <div class="text-xs bg-white py-2 rounded-md text-center  m-1 border-gray-500 border-2">&#x20B9
+                25 Lakhs to &#x20B9 30- Lakhs</div>
+              <div class="text-xs bg-white py-2 rounded-md text-center  m-1 border-gray-500 border-2">&#x20B9
+                30 Lakhs to &#x20B9 35 Lakhs</div>
+              <div class="text-xs bg-white py-2 rounded-md text-center  m-1 border-gray-500 border-2">Above
+                &#x20B9 235 Lakhs</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-[70%] md:w-[60%]">
+        <h2 class="text-base md:text-2xl lg:text-2xl xl:text-2xl text-center md:text-start relative heading-bottom">
+          Top Machine On Rent
+        </h2>
+        <div class="bg-gray-50 rounded-xl mt-6">
+          <div>
+            <h4 class="text-xl text-gray-800 px-7 pt-4">JCB 3DX Xtra Backhoe Loader</h4>
+            <div class="px-7 mt-3 flex lg:flex-row md:flex-col flex-col md:items-center">
+              <div class="bg-gray-200 lg:w-[30%] md:w-[90%] h-[220px] rounded-xl">
+                <img src="/assets/images/homeLogo.png" />
+              </div>
+              <div class="lg:w-[70%] md:mx-5 lg:mx-5 flex justify-center flex-col   md:w-full w-full my-2">
+                <div>
+                  <p class="mb-2 text-black text-sm mb-4">
+                    Lorem ipsum dolor sit ame contsectetur adipisicing elit. Ab a,
+                    repellendus quisquam nostrum eligendi minima nam.
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-y-5 lg:w-[65%] md:w-full ">
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/power.svg" alt="power-logo" class="w-full h-full" />
+                    </div>
+                    <div>
+                      <p class="text-[0.70rem]">Engine Power</p>
+                      <p class="font-bold text-base">96HP</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/kg_logo.png" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Operating Weigth</p>
+                      <p class="font-bold text-base">11400 Kg</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/construction-28.svg" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Digging Depth</p>
+                      <p class="font-bold text-base">3.02m</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/currency_rupee_svg.svg" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Ex-Showroom Price</p>
+                      <p class="font-bold text-base">31 Lakh - 48 Lakh</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="button"
+                    class="bg-black px-2 py-1 lg:w-1/2 md:w-full w-full  mt-4 mb-2 text-lg font-bold text-white rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    Contact Owner
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-xl mt-6">
+          <div>
+            <h4 class="text-xl text-gray-800 px-7 pt-4">Vibratory TandemRoller</h4>
+            <div class="px-7 mt-3 flex lg:flex-row md:flex-col flex-col md:items-center">
+              <div class="bg-gray-200 lg:w-[30%] md:w-[90%] h-[220px] rounded-xl">
+                <img src="/assets/images/homeLogo.png" />
+              </div>
+              <div class="lg:w-[70%] md:mx-5 lg:mx-5 flex justify-center flex-col   md:w-full w-full my-2">
+                <div>
+                  <p class="mb-2 text-black text-sm mb-4">
+                    Lorem ipsum dolor sit ame contsectetur adipisicing elit. Ab a,
+                    repellendus quisquam nostrum eligendi minima nam.
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-y-5 lg:w-[65%] md:w-full ">
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/power.svg" alt="power-logo" class="w-full h-full" />
+                    </div>
+                    <div>
+                      <p class="text-[0.70rem]">Engine Power</p>
+                      <p class="font-bold text-base">96HP</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/kg_logo.png" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Operating Weigth</p>
+                      <p class="font-bold text-base">11400 Kg</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/drum-width.svg" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Drum Width</p>
+                      <p class="font-bold text-base">3.02m</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/currency_rupee_svg.svg" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Ex-Showroom Price</p>
+                      <p class="font-bold text-base">31 Lakh - 48 Lakh</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="button"
+                    class="bg-black px-2 py-1 lg:w-1/2 md:w-full w-full  mt-4 mb-2 text-lg font-bold text-white rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    Contact Owner
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-xl mt-6">
+          <div>
+            <h4 class="text-xl text-gray-800 px-7 pt-4">Heavy Tata Truck S400</h4>
+            <div class="px-7 mt-3 flex lg:flex-row md:flex-col flex-col md:items-center">
+              <div class="bg-gray-200 lg:w-[30%] md:w-[90%] h-[220px] rounded-xl">
+                <img src="/assets/images/homeLogo.png" />
+              </div>
+              <div class="lg:w-[70%] md:mx-5 lg:mx-5 flex justify-center flex-col   md:w-full w-full my-2">
+                <div>
+                  <p class="mb-2 text-black text-sm mb-4">
+                    Lorem ipsum dolor sit ame contsectetur adipisicing elit. Ab a,
+                    repellendus quisquam nostrum eligendi minima nam.
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-y-5 lg:w-[65%] md:w-full ">
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/power.svg" alt="power-logo" class="w-full h-full" />
+                    </div>
+                    <div>
+                      <p class="text-[0.70rem]">Engine Power</p>
+                      <p class="font-bold text-base">96HP</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/kg_logo.png" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Operating Weigth</p>
+                      <p class="font-bold text-base">11400 Kg</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/fuel-tank.svg" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Fuel Tank Cap</p>
+                      <p class="font-bold text-base">300 Ltr</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/currency_rupee_svg.svg" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Ex-Showroom Price</p>
+                      <p class="font-bold text-base">31 Lakh - 48 Lakh</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="button"
+                    class="bg-black px-2 py-1 lg:w-1/2 md:w-full w-full  mt-4 mb-2 text-lg font-bold text-white rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    Contact Owner
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-xl mt-6">
+          <div>
+            <h4 class="text-xl text-gray-800 px-7 pt-4">KAMASTU RH570 TM Excavator</h4>
+            <div class="px-7 mt-3 flex lg:flex-row md:flex-col flex-col md:items-center">
+              <div class="bg-gray-200 lg:w-[30%] md:w-[90%] h-[220px] rounded-xl">
+                <img src="/assets/images/homeLogo.png" />
+              </div>
+              <div class="lg:w-[70%] md:mx-5 lg:mx-5 flex justify-center flex-col   md:w-full w-full my-2">
+                <div>
+                  <p class="mb-2 text-black text-sm mb-4">
+                    Lorem ipsum dolor sit ame contsectetur adipisicing elit. Ab a,
+                    repellendus quisquam nostrum eligendi minima nam.
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-y-5 lg:w-[65%] md:w-full ">
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/power.svg" alt="power-logo" class="w-full h-full" />
+                    </div>
+                    <div>
+                      <p class="text-[0.70rem]">Engine Power</p>
+                      <p class="font-bold text-base">96HP</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/kg_logo.png" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Operating Weigth</p>
+                      <p class="font-bold text-base">11400 Kg</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/construction-28.svg" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Digging Depth</p>
+                      <p class="font-bold text-base">3.02m</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/currency_rupee_svg.svg" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Ex-Showroom Price</p>
+                      <p class="font-bold text-base">31 Lakh - 48 Lakh</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="button"
+                    class="bg-black px-2 py-1 lg:w-1/2 md:w-full w-full  mt-4 mb-2 text-lg font-bold text-white rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    Contact Owner
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-xl mt-6">
+          <div>
+            <h4 class="text-xl text-gray-800 px-7 pt-4">Single Drum Vibratory Roller</h4>
+            <div class="px-7 mt-3 flex lg:flex-row md:flex-col flex-col md:items-center">
+              <div class="bg-gray-200 lg:w-[30%] md:w-[90%] h-[220px] rounded-xl">
+                <img src="/assets/images/homeLogo.png" />
+              </div>
+              <div class="lg:w-[70%] md:mx-5 lg:mx-5 flex justify-center flex-col   md:w-full w-full my-2">
+                <div>
+                  <p class="mb-2 text-black text-sm mb-4">
+                    Lorem ipsum dolor sit ame contsectetur adipisicing elit. Ab a,
+                    repellendus quisquam nostrum eligendi minima nam.
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-y-5 lg:w-[65%] md:w-full ">
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/power.svg" alt="power-logo" class="w-full h-full" />
+                    </div>
+                    <div>
+                      <p class="text-[0.70rem]">Engine Power</p>
+                      <p class="font-bold text-base">96HP</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/kg_logo.png" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Operating Weigth</p>
+                      <p class="font-bold text-base">11400 Kg</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/drum-width.svg" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Drum Width</p>
+                      <p class="font-bold text-base">3.02m</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <div class="h-10 w-10">
+                      <img src="./assets/images/currency_rupee_svg.svg" alt="mining-logo"
+                        class="w-full h-full" />
+                    </div>
+                    <div class="">
+                      <p class="text-[0.70rem]">Ex-Showroom Price</p>
+                      <p class="font-bold text-base">31 Lakh - 48 Lakh</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="button"
+                    class="bg-black px-2 py-1 lg:w-1/2 md:w-full w-full  mt-4 mb-2 text-lg font-bold text-white rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    Contact Owner
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+  <!-- .....Filter Section End Here...... -->
+  <!-- Contact JCB India Limited end here -->
+  <section class="mt-8 sm:mt-16">
+    <div class="flex flex-col gap-4 sm:flex-row justify-between mx-5 sm:mx-16 my-4">
+      <h2
+        class="text-lg md:text-2xl lg:text-2xl xl:text-2xl text-center md:text-start font-bold relative heading-bottom">
+        Find Your Nearest Dealers
+      </h2>
+      <div class="relative lg-flex shrink my-2 md:w-[45%]">
+        <img src="./assets/images/searchIcon.png" alt="searchIcon" class="absolute right-2 top-2" />
+        <input type="text" placeholder="Type Your City Name"
+          class="w-full h-8 rounded-md text-xs sm:text-md focus:ring-[#ECA93C] focus:border-[#ECA93C]" />
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mx-5 sm:mx-16">
+      <div class="bg-[#ECA93C] rounded-lg p-2 my-1 sm:my-6 ">
+        <div class="bg-white rounded-full p-2 w-20 mx-auto">
+          <img src="/assets/images/showroom-logo.png" alt="showroom"
+            class="text-center rounded-full" />
+        </div>
+        <p class="font-bold text-center p-3">Alfa Infra.</p>
+        <p class="py-4 px-2">
+          A/39, Gulati Street 55, Dadar, Bihar, Kanpur - 396899
+        </p>
+        <button
+          class="bg-white text-sm py-1 w-full mx-auto text-lg font-normal rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200">
+          Contact Dealer
+        </button>
+      </div>
+      <div class="bg-[#ECA93C] rounded-lg p-2 my-1 sm:my-6">
+        <div class="bg-white rounded-full p-2 w-20 mx-auto">
+          <img src="/assets/images/showroom-logo.png" alt="showroom"
+            class="text-center rounded-full" />
+        </div>
+        <p class="font-bold text-center p-3">Alfa Infra.</p>
+        <p class="py-4 px-2">
+          A/39, Gulati Street 55, Dadar, Bihar, Kanpur - 396899
+        </p>
+        <button
+          class="bg-white text-sm py-1 w-full mx-auto text-lg font-normal rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200">
+          Contact Dealer
+        </button>
+      </div>
+      <div class="bg-[#ECA93C] rounded-lg p-2 my-1 sm:my-6 ">
+        <div class="bg-white rounded-full p-2 w-20 mx-auto">
+          <img src="/assets/images/showroom-logo.png" alt="showroom"
+            class="text-center rounded-full" />
+        </div>
+        <p class="font-bold text-center p-3">Alfa Infra.</p>
+        <p class="py-4 px-2">
+          A/39, Gulati Street 55, Dadar, Bihar, Kanpur - 396899
+        </p>
+        <button
+          class="bg-white text-sm py-1 w-full mx-auto text-lg font-normal rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200">
+          Contact Dealer
+        </button>
+      </div>
+      <div class="bg-[#ECA93C] rounded-lg p-2 my-1 sm:my-6 ">
+        <div class="bg-white rounded-full p-2 w-20 mx-auto">
+          <img src="/assets/images/showroom-logo.png" alt="showroom"
+            class="text-center rounded-full" />
+        </div>
+        <p class="font-bold text-center p-3">Alfa Infra.</p>
+        <p class="py-4 px-2">
+          A/39, Gulati Street 55, Dadar, Bihar, Kanpur - 396899
+        </p>
+        <button
+          class="bg-white text-sm py-1 w-full mx-auto text-lg font-normal rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200">
+          Contact Dealer
+        </button>
+      </div>
+      <div class="bg-[#ECA93C] rounded-lg p-2 my-1 sm:my-6 ">
+        <div class="bg-white rounded-full p-2 w-20 mx-auto">
+          <img src="/assets/images/showroom-logo.png" alt="showroom"
+            class="text-center rounded-full" />
+        </div>
+        <p class="font-bold text-center p-3">Alfa Infra.</p>
+        <p class="py-4 px-2">
+          A/39, Gulati Street 55, Dadar, Bihar, Kanpur - 396899
+        </p>
+        <button
+          class="bg-white text-sm py-1 w-full mx-auto text-lg font-normal rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200">
+          Contact Dealer
+        </button>
+      </div>
+      <div class="bg-[#ECA93C] rounded-lg p-2 my-1 sm:my-6 ">
+        <div class="bg-white rounded-full p-2 w-20 mx-auto">
+          <img src="/assets/images/showroom-logo.png" alt="showroom"
+            class="text-center rounded-full" />
+        </div>
+        <p class="font-bold text-center p-3">Alfa Infra.</p>
+        <p class="py-4 px-2">
+          A/39, Gulati Street 55, Dadar, Bihar, Kanpur - 396899
+        </p>
+        <button
+          class="bg-white text-sm py-1 w-full mx-auto text-lg font-normal rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200">
+          Contact Dealer
+        </button>
+      </div>
+      <div class="bg-[#ECA93C] rounded-lg p-2 my-1 sm:my-6">
+        <div class="bg-white rounded-full p-2 w-20 mx-auto">
+          <img src="/assets/images/showroom-logo.png" alt="showroom"
+            class="text-center rounded-full" />
+        </div>
+        <p class="font-bold text-center p-3">Alfa Infra.</p>
+        <p class="py-4 px-2">
+          A/39, Gulati Street 55, Dadar, Bihar, Kanpur - 396899
+        </p>
+        <button
+          class="bg-white text-sm py-1 w-full mx-auto text-lg font-normal rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200">
+          Contact Dealer
+        </button>
+      </div>
+      <div class="bg-[#ECA93C] rounded-lg p-2 my-1 sm:my-6">
+        <div class="bg-white rounded-full p-2 w-20 mx-auto">
+          <img src="/assets/images/showroom-logo.png" alt="showroom"
+            class="text-center rounded-full" />
+        </div>
+        <p class="font-bold text-center p-3">Alfa Infra.</p>
+        <p class="py-4 px-2">
+          A/39, Gulati Street 55, Dadar, Bihar, Kanpur - 396899
+        </p>
+        <button
+          class="bg-white text-sm py-1 w-full mx-auto text-lg font-normal rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200">
+          Contact Dealer
+        </button>
+      </div>
+      <div class="bg-[#ECA93C] rounded-lg p-2 my-1 sm:my-6">
+        <div class="bg-white rounded-full p-2 w-20 mx-auto">
+          <img src="/assets/images/showroom-logo.png" alt="showroom"
+            class="text-center rounded-full" />
+        </div>
+        <p class="font-bold text-center p-3">Alfa Infra.</p>
+        <p class="py-4 px-2">
+          A/39, Gulati Street 55, Dadar, Bihar, Kanpur - 396899
+        </p>
+        <button
+          class="bg-white text-sm py-1 w-full mx-auto text-lg font-normal rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200">
+          Contact Dealer
+        </button>
+      </div>
+      <div class="bg-[#ECA93C] rounded-lg p-2 my-1 sm:my-6">
+        <div class="bg-white rounded-full p-2 w-20 mx-auto">
+          <img src="/assets/images/showroom-logo.png" alt="showroom"
+            class="text-center rounded-full" />
+        </div>
+        <p class="font-bold text-center p-3">Alfa Infra.</p>
+        <p class="py-4 px-2">
+          A/39, Gulati Street 55, Dadar, Bihar, Kanpur - 396899
+        </p>
+        <button
+          class="bg-white text-sm py-1 w-full mx-auto text-lg font-normal rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200">
+          Contact Dealer
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Comparisons page start here -->
+  <!-- Frequently asked que section start here  -->
+  <section class="sm:mx-16 sm:mb-32">
+    <h2
+      class="text-lg md:text-2xl lg:text-2xl xl:text-2xl text-center md:text-start font-bold my-4 mt-20 relative heading-bottom">
+      Frequently Asked Questions
+    </h2>
+    <div class="my-8 px-5 md:px-0">
+      <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-white text-black-600">
+        <div class="mb-5">
+          <h2 id="accordion-color-heading-1" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-black border border-gray-200 rounded-lg hover:bg-black-100 gap-3"
+              data-accordion-target="#accordion-color-body-1" aria-expanded="false"
+              aria-controls="accordion-color-body-1" onclick="toggleCircle(this)">
+              <span>Q. What is the price of JCB 3DX Backhoe Loader in
+                India?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="w-5 h-5 shrink-0" fill="none"
+                aria-hidden="true">
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" class="circle-plus" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 10h10M10 5v10" class="path-plus" />
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" class="circle-minus" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10h10"
+                  class="path-minus" style="display: none" />
+              </svg>
+            </button>
+          </h2>
+
+          <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+            <div class="p-5 rounded-b-xl border border-0 bg-gray-100">
+              <p class="mb-2 text-black">
+                Lorem ipsum dolor sit ame contsectetur adipisicing elit. Ab a,
+                repellendus quisquam nostrum eligendi minima nam, esse
+                corrupti commodi quia consequatur harum voluptatibus vero
+                error! Repellat excepturi repellendus quis natus!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5">
+          <h2 id="accordion-color-heading-2" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-black border border-gray-200 rounded-lg hover:bg-black-100 gap-3"
+              data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+              aria-controls="accordion-color-body-2" onclick="toggleCircle(this)">
+              <span>Q. What is the price of JCB 3DX Backhoe Loader in
+                India?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="w-5 h-5 shrink-0" fill="none"
+                aria-hidden="true">
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" class="circle-plus" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 10h10M10 5v10" class="path-plus" />
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" class="circle-minus" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10h10"
+                  class="path-minus" style="display: none" />
+              </svg>
+            </button>
+          </h2>
+
+          <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+            <div class="p-5 rounded-b-xl border border-0 bg-gray-100">
+              <p class="mb-2 text-black">
+                Lorem ipsum dolor sit ame contsectetur adipisicing elit. Ab a,
+                repellendus quisquam nostrum eligendi minima nam, esse
+                corrupti commodi quia consequatur harum voluptatibus vero
+                error! Repellat excepturi repellendus quis natus!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5">
+          <h2 id="accordion-color-heading-3" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-black border border-gray-200 rounded-lg hover:bg-black-100 gap-3"
+              data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+              aria-controls="accordion-color-body-3" onclick="toggleCircle(this)">
+              <span>Q. What is the price of JCB 3DX Backhoe Loader in
+                India?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="w-5 h-5 shrink-0" fill="none"
+                aria-hidden="true">
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" class="circle-plus" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 10h10M10 5v10" class="path-plus" />
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" class="circle-minus" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10h10"
+                  class="path-minus" style="display: none" />
+              </svg>
+            </button>
+          </h2>
+
+          <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+            <div class="p-5 rounded-b-xl border border-0 bg-gray-100">
+              <p class="mb-2 text-black">
+                Lorem ipsum dolor sit ame contsectetur adipisicing elit. Ab a,
+                repellendus quisquam nostrum eligendi minima nam, esse
+                corrupti commodi quia consequatur harum voluptatibus vero
+                error! Repellat excepturi repellendus quis natus!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5">
+          <h2 id="accordion-color-heading-4" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-black border border-gray-200 rounded-lg hover:bg-black-100 gap-3"
+              data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+              aria-controls="accordion-color-body-4" onclick="toggleCircle(this)">
+              <span>Q. What is the price of JCB 3DX Backhoe Loader in
+                India?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="w-5 h-5 shrink-0" fill="none"
+                aria-hidden="true">
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" class="circle-plus" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 10h10M10 5v10" class="path-plus" />
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" class="circle-minus" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10h10"
+                  class="path-minus" style="display: none" />
+              </svg>
+            </button>
+          </h2>
+
+          <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+            <div class="p-5 rounded-b-xl border border-0 bg-gray-100">
+              <p class="mb-2 text-black">
+                Lorem ipsum dolor sit ame contsectetur adipisicing elit. Ab a,
+                repellendus quisquam nostrum eligendi minima nam, esse
+                corrupti commodi quia consequatur harum voluptatibus vero
+                error! Repellat excepturi repellendus quis natus!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5">
+          <h2 id="accordion-color-heading-5" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-black border border-gray-200 rounded-lg hover:bg-black-100 gap-3"
+              data-accordion-target="#accordion-color-body-5" aria-expanded="false"
+              aria-controls="accordion-color-body-5" onclick="toggleCircle(this)">
+              <span>Q. What is the price of JCB 3DX Backhoe Loader in
+                India?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="w-5 h-5 shrink-0" fill="none"
+                aria-hidden="true">
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" class="circle-plus" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 10h10M10 5v10" class="path-plus" />
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" class="circle-minus" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10h10"
+                  class="path-minus" style="display: none" />
+              </svg>
+            </button>
+          </h2>
+
+          <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
+            <div class="p-5 rounded-b-xl border border-0 bg-gray-100">
+              <p class="mb-2 text-black">
+                Lorem ipsum dolor sit ame contsectetur adipisicing elit. Ab a,
+                repellendus quisquam nostrum eligendi minima nam, esse
+                corrupti commodi quia consequatur harum voluptatibus vero
+                error! Repellat excepturi repellendus quis natus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Frequently asked que section end here  -->
+  <!-- Download the free app section start here  -->
+  <section class="pb-[3rem] md:pb-0">
+    <div
+      class="md:mt-24 h-[26rem] sm:h-[36rem] flex justify-between flex-col"
+    >
+      <div
+        class="h-[30rem] grid grid-cols-1 md:grid-cols-2 bg-[#b47e27] items-center bg-[url('./assets/images/bg-img.png')]"
+      >
+        <div
+          class="xl:ml-[40%] md:ml-36 flex flex-col justify-start align-center"
+        >
+          <div class="">
+            <h2
+              class="text-white text-2xl text-center md:text-start font-bold"
+            >
+              Download The Free
+            </h2>
+            <h2
+              class="text-white text-2xl text-center md:text-start font-bold"
+            >
+              Machinewale App
+            </h2>
+            <p class="text-white text-sm text-center md:text-start">
+              For Faster, easier &amp; exclusive deals.
+            </p>
+          </div>
+          <div
+            class="download flex flex-col md:flex-row gap-5 mt-8 justify-start items-center"
+          >
+            <a href="https://www.apple.com/in/app-store/" target="_blank">
+              <div
+                class="apple bg-white flex gap-2 w-[12.5rem] p-3 rounded-lg cursor-pointer border-x-2 border-y-2"
+              >
+                <div class="img">
+                  <img
+                    src="/assets/images/apple-logo.png"
+                    alt="apple logo"
+                  />
+                </div>
+                <div class="my-auto">
+                  <p class="text-xs">Download on the</p>
+                  <h6 class="font-bold">Apple Store</h6>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://play.google.com/store/apps?hl=en_IN&amp;gl=US"
+              target="_blank"
+            >
+              <div
+                class="google bg-white flex gap-2 w-[12.5rem] p-3 rounded-lg cursor-pointer border-x-2 border-y-2"
+              >
+                <div class="img">
+                  <img
+                    src="/assets/images/google-play-store.png"
+                    alt="google-play logo"
+                  />
+                </div>
+                <div class="my-auto">
+                  <p class="text-xs">Get it from</p>
+                  <h6 class="font-bold text-gray-500">Google Play</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="relative hidden lg:block">
+          <img
+            src="./assets/images/mobile-logo.png"
+            alt="mobile-logo"
+            class="absolute inset-14 top-0 my-auto h-[42rem]"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Download the free app section end here  -->
+
+  <!-- About-Us page end here  -->
+
+  <!-- tailwind script -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- flowbite script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <!-- Custom Js Link  -->
+  <!-- Filter Button Script start -->
+  <script>
+    const toggleButton = document.getElementById("toggleButton");
+
+    const myDiv = document.getElementById("myDiv");
+
+    toggleButton.addEventListener("click", () => {
+      myDiv.classList.toggle("hidden");
+    });
+  </script>
+  <!-- Filter Button Script end -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#slider-range").slider({
+        range: true,
+        min: 10000,
+        max: 25000,
+        values: [2000, 4000],
+        slide: function (event, ui) {
+          $("#amount").val("₹" + ui.values[0] + " - ₹" + ui.values[1]);
+        },
+      });
+      $("#amount").val(
+        "₹" +
+        $("#slider-range").slider("values", 0) +
+        " - ₹" +
+        $("#slider-range").slider("values", 1)
+      );
+    });
+  </script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+
+    <!--Footer 1 page start here -->
+  <footer>
+    <div
+      class="grid sm:justify-center sm:align-middle gap-y-5 gap-x-4 md:justify-items-start bg-[#F6F6F6] py-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 px-5 sm:px-16">
+      <div class="flex flex-col w-full gap-y-3">
+        <div class="flex justify-items-start my-1">
+        <a href="/Home">
+          <img src="assets/images/brandLogo.png" class="" alt="brandLogo" />
+        </a>
+        </div>
+        <div class="flex flex-col gap-y-5">
+          <a href="info@machinewale.com" class="">info(at)machinewale(dot)com</a>
+          <!-- <div class="flex flex-col gap-y-2">
+              <p class="">IND +91 99991 99991 (Sales)</p>
+              <p class="">IND +91 88881 88881 (Buyers)</p>
+            </div> -->
+        </div>
+      </div>
+      <div class="flex flex-col w-full gap-y-3">
+        <h2 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl font-bold md:mb-1">
+          Quick Links
+        </h2>
+        <!-- <a href="" class="">Apply For Loan</a>
+          <a href="" class="">EMI Calculator</a> -->
+        
+        <a href="/find-dealer" target="_blank" class="">Find dealers</a>
+        
+      </div>
+      <div class="flex flex-col w-full gap-y-3">
+        <h2 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl font-bold md:mb-1">
+          Company
+        </h2>
+        <a href="/aboutus" class="">About Us</a>
+        <a href="" class="">Privacy Policy</a>
+        <a href="" class="">FAQ</a>
+        <a href="/contactus" class="">Contact Us</a>
+      </div>
+      <div class="flex flex-col w-full gap-y-3">
+        <h2 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl font-bold md:mb-1">
+          More Links
+        </h2>
+        
+        <a href="/new-machine" target="_blank" class="">New Machine</a>
+        
+        <a href="/used-machine" target="_blank" class="">Used Machine</a>
+        
+        <a href="/review" target="_blank" class="">Review</a>
+        
+        <a href="/news-update" target="_blank" class="">News & Update</a>
+        
+        <!-- <a href="" class="">Used Machine</a>
+        <a href="" class="">Review</a>
+        <a href="" class="">News & Update</a> -->
+      </div>
+      <!-- <div class="md:col-span-2 lg:col-span-4 xl:col-span-0"> -->
+      <div class="flex flex-col w-full lg:col-span-4 xl:col-span-2 items-center md:col-start-1 md:col-end-3">
+        <div class="my-3 md:my-auto col-span-7">
+          <!-- <h2 class="text-[1.5rem] font-medium">Dowload The Free</h2> -->
+          <h2 class="text-lg sm:text-2xl xl:text-3xl text-center  lg:text-start font-medium">Download The Free</h2>
+          <!-- <h2 class="text-[2.5rem] font-bold">MachineWale App</h2> -->
+          <h2 class="text-xl sm:text-2xl xl:text-4xl    font-bold text-center lg:text-start text-nowrap">MachineWale App
+          </h2>
+          <p class="text-sm font-medium text-center  sm:text-start md:text-center lg:text-start">
+            For Faster, easier & exclusive deals.
+          </p>
+          <!-- <div class="download flex flex-col md:flex-row gap-5 mt-5 justify-items-start items-center">
+            <a href="#" target="_blank"
+              class="apple bg-white flex gap-2 w-[11.9rem] h-[4.5rem] p-3 rounded-lg drop-shadow-xl cursor-pointer border-x-2 border-y-2">
+              <div class="h-8 w-8 my-auto">
+                <img src="/assets/images/apple-logo.png" alt="apple logo" />
+              </div>
+              <div class="my-auto">
+                <p class="text-xs">Download on the</p>
+                <h6 class="font-bold">Apple Store</h6>
+              </div>
+            </a>
+            <a href="#" target="_blank"
+              class="google bg-white flex gap-2 w-[12.5rem] p-3 rounded-lg drop-shadow-xl cursor-pointer border-x-2 border-y-2">
+              <div class="h-8 w-8 my-auto">
+                <img src="/assets/images/google-play-store.png" alt="google-play logo" />
+              </div>
+              <div class="">
+                <p>Get it from</p>
+                <h6 class="font-bold text-gray-500">Google Play</h6>
+              </div>
+            </a>
+          </div> -->
+
+          <!-- VG CODE  start-->
+          <div class="download flex flex-row md:flex-row gap-5 mt-3 justify-center md:justify-items-start items-center">
+            <a href="https://www.apple.com/in/app-store/" target="_blank"
+              class="apple md:bg-white flex gap-2 md:w-[11rem] md:h-[4.5rem] md:p-3 rounded-lg cursor-pointer">
+              <div class="md:h-8 md:w-8 my-auto">
+                <img src="/assets/images/apple-logo.png" class="h-8" alt="apple logo" class="logo">
+              </div>
+              <div class="my-auto hidden md:block">
+                <p class="text-xs">Download on the</p>
+                <h6 class="font-bold">Apple Store</h6>
+              </div>
+            </a>
+            <a href="https://play.google.com/store/apps?hl=en_IN&gl=US" target="_blank"
+              class="google md:bg-white flex gap-2 md:w-[11rem] md:h-[4.5rem] md:p-3 rounded-lg cursor-pointer">
+              <div class="md:h-8 md:w-8 my-auto">
+                <!-- <img src="/assets/images/playstore-icon.svg" alt="google-play logo" class="logo"> -->
+                <!-- <img src="/assets/images/google-play-store.png" alt="google-play logo" /> -->
+                <img src="/assets/images/google-play.svg" class="h-8" alt="google-play logo" />
+              </div>
+              <div class="hidden md:block">
+                <p>Get it from</p>
+                <h6 class="font-bold text-gray-500">Google Play</h6>
+              </div>
+            </a>
+          </div>
+
+
+
+          <!-- VG CODE  end -->
+
+
+          <div class="w-full flex justify-center sm:justify-start">
+            <h2 class="text-lg font-medium my-4">Follow & Like Us On</h2>
+          </div>
+          <div class="flex w-full gap-5">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="/assets/images/facebook.png" class="h-8 w-8" alt="facebook logo" />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="/assets/images/instagram.png" class="h-8 w-8" alt="instagram logo" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="/assets/images/linkedin.png" class="h-8 w-8" alt="linkedin logo" />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="/assets/images/youtube.png" class="h-8 w-8" alt="youtube logo" />
+            </a>
+            <a href="https://twitter.com/?lang=en" target="_blank">
+              <img src="/assets/images/twitter.png" class="h-8 w-8" alt="twitter logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Footer 1 page end here -->
+  <!--Footer 2 page start here -->
+  <footer class="bg-black flex flex-col justify-between gap-4 p-4 md:flex-row px-5 sm:px-16">
+    <div class="text-white">
+      <h6>
+        Copyright © – <span id="current-year"> 2024 </span> | All Rights
+        Reserved By Machinewale®
+      </h6>
+    </div>
+    <div class="text-white">
+      <h6>Privacy Policy English (IND)</h6>
+    </div>
+  </footer>
+  <!--Footer 2 page end here -->
+  <script src="/assets/js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- tailwind script -->
+  <script src="/Home_page/Home.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- flowbite script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <!-- slider script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+
+
+  <script type="text/javascript" src="/assets/frappe/js/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/libs.min.js"></script>
+  <script type="text/javascript" src="/assets/js/frappe-web.min.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap-4-web.min.js"></script>
+
+</body>
+</html>

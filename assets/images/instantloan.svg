@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Group_617" data-name="Group 617" transform="translate(-1281 -2083)">
+    <rect id="Rectangle_269" data-name="Rectangle 269" width="64" height="64" rx="10" transform="translate(1281 2083)" fill="#fff"/>
+    <g id="money-28" transform="translate(1288.69 2091.052)">
+      <path id="Path_4526" data-name="Path 4526" d="M6.31,44.687l5.738.874c4.525.049,4.427-3.306,8.747-3.059h4.441c3.094.014,3.686,3.764,2.46,3.764h.62a10.326,10.326,0,0,0,6.2-2.065l5.251-3.933c2.4-2.072,3.369,1.558,2.375,2.629l-8.176,7.782a12.355,12.355,0,0,1-7.331,3.306L6.31,54.026" transform="translate(0 -10.534)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_4527" data-name="Path 4527" d="M39.652,35.628a11.123,11.123,0,0,0,.493-3.4c0-7.415-4.941-15.881-12.053-15.881-6.464,0-12.032,8.465-12.032,15.881A9.436,9.436,0,0,0,17.822,38.1" transform="translate(-2.878 -3.66)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_2406" data-name="Line 2406" x1="5.019" transform="translate(22.769 35.732)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_4529" data-name="Path 4529" d="M24.863,12.818s5.561-1.008,7.627,2.742c0,0-2.735-2.9-9.1,0" transform="translate(-5.041 -2.582)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_4530" data-name="Path 4530" d="M32.393,12.972c0-3.461,7.577-6.1,4.074-8.028-1.41-.775-1.755,1.537-3.849-.134-1.642-1.311-2.925-1.043-4.434.247C26.535,6.459,24.357,3.6,23.3,5.3c-1.565,2.53,5.04,3.834,5.336,7.549" transform="translate(-4.944)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Ellipse_345" data-name="Ellipse 345" transform="translate(19.418 18.128)" fill="#fff" stroke="#231f20" stroke-width="0.5">
+        <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+        <circle cx="5.5" cy="5.5" r="5.25" fill="none"/>
+      </g>
+      <path id="currency_rupee_FILL0_wght400_GRAD0_opsz24" d="M243.331-832.238l-2.9-3.018v-.862h1.509a1.429,1.429,0,0,0,.986-.372,1.519,1.519,0,0,0,.5-.922H240v-.862h3.3a1.557,1.557,0,0,0-.544-.62,1.427,1.427,0,0,0-.814-.243H240V-840h5.174v.862h-1.4a2.584,2.584,0,0,1,.27.4,2.01,2.01,0,0,1,.183.463h.949v.862H244.3a2.324,2.324,0,0,1-.755,1.536,2.279,2.279,0,0,1-1.606.62h-.313l2.9,3.018Z" transform="translate(-217.582 860.128)" fill="#282828"/>
+    </g>
+  </g>
+</svg>
